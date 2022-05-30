@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/icon"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/input"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_marginEnd="@dimen/low_margin"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#455A64"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:layout_marginStart="@dimen/high_margin"
+        android:layout_marginEnd="@dimen/high_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/r2to10"
+            android:checked="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/r2to10"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/r10to2"
+            android:checked="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/r10to2"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_marginEnd="@dimen/low_margin"
+        android:text="@string/text"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/ban"
+        android:textStyle="bold"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:text="@string/output"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/output"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_marginEnd="@dimen/low_margin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</LinearLayout>
